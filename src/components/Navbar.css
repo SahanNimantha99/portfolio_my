@@ -1,6 +1,6 @@
 /* 🌟 Modern Glassy Navbar */
 .custom-navbar {
-  background: rgba(208, 232, 242, 0.36); /* light blue, frosted effect */
+  background: linear-gradient(-45deg, #ffffff8f, #7aaaba7f, #cad3d788, #0076b688);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
@@ -16,7 +16,7 @@
 .custom-navbar .navbar-brand {
   font-weight: 700;
   font-size: 1.7rem;
-  color: #5a6364;
+  color: #1b475b;
   cursor: pointer;
   transition: all 0.3s ease;
 }
