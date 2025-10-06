@@ -70,7 +70,7 @@ const Hero = () => {
           </button>
 
           <a
-            href="/Sahan_Nimantha_CV.pdf"
+            href={`${process.env.PUBLIC_URL}/Sahan_Nimantha_CV.pdf`}
             download
             className="btn btn-primary hero-btn"
           >
