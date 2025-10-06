@@ -1,23 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Work from "./components/Work";
+import Education from "./components/Education";
+import Projects from "./components/Projects";
+import Achievements from "./components/Achievements";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <div className="container">
+        <section id="hero">
+          {" "}
+          <Hero />{" "}
+        </section>{" "}
+        <section id="about">
+          {" "}
+          <About />{" "}
+        </section>{" "}
+        <section id="work">
+          {" "}
+          <Work />{" "}
+        </section>{" "}
+        <section id="education">
+          {" "}
+          <Education />{" "}
+        </section>{" "}
+        <section id="projects">
+          {" "}
+          <Projects />{" "}
+        </section>{" "}
+        <section id="achievements">
+          {" "}
+          <Achievements />{" "}
+        </section>{" "}
+        <section id="contact">
+          {" "}
+          <Contact />{" "}
+        </section>{" "}
+      </div>{" "}
+      <Footer />
     </div>
   );
 }

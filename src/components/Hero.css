@@ -1,0 +1,105 @@
+.hero-container {
+  background: rgba(0, 119, 182, 0.85); /* deep blue glassy */
+  -webkit-backdrop-filter: blur(12px); /* frosted glass effect for Safari */
+  backdrop-filter: blur(12px); /* frosted glass effect */
+  color: #ffffff;
+  padding: 120px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-container:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #0077b6, #00b4d8, #90e0ef);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+/* CTA Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero-btn {
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary.hero-btn {
+  background: linear-gradient(135deg, #0077b6, #00b4d8);
+  color: #fff;
+}
+
+.btn-primary.hero-btn:hover {
+  background: linear-gradient(135deg, #00b4d8, #90e0ef);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 180, 216, 0.35);
+}
+
+.btn-secondary.hero-btn {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.btn-secondary.hero-btn:hover {
+  background: rgba(255, 255, 255, 0.35);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.25);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 2.8rem;
+  }
+  .hero-description {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  .hero-btn {
+    padding: 10px 22px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  .hero-description {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+  .hero-buttons {
+    gap: 15px;
+    flex-direction: column;
+  }
+  .hero-btn {
+    width: 100%;
+    padding: 12px 0;
+  }
+}

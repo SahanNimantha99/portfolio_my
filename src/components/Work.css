@@ -1,0 +1,138 @@
+.work-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.work-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  background: linear-gradient(90deg, #0077b6, #00b4d8, #90e0ef);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Work Cards Grid */
+.work-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.work-card {
+  background: rgba(0, 119, 182, 0.15); /* glassy light blue */
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+}
+
+.work-role {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #0077b6;
+}
+
+.work-company {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #00b4d8;
+  margin-bottom: 5px;
+}
+
+.work-duration {
+  font-size: 0.95rem;
+  color: #0a192f;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.work-details {
+  font-size: 0.95rem;
+  color: #212529;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.work-details li {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.work-details li::before {
+  content: "•";
+  color: #0077b6;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.work-tech {
+  font-size: 0.9rem;
+  color: #0077b6;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .work-title {
+    font-size: 2.4rem;
+  }
+
+  .work-card {
+    padding: 25px 20px;
+  }
+
+  .work-role {
+    font-size: 1.3rem;
+  }
+
+  .work-company {
+    font-size: 1rem;
+  }
+
+  .work-details {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .work-title {
+    font-size: 2rem;
+  }
+
+  .work-card {
+    padding: 20px 15px;
+  }
+
+  .work-role {
+    font-size: 1.2rem;
+  }
+
+  .work-company {
+    font-size: 0.95rem;
+  }
+
+  .work-details {
+    font-size: 0.85rem;
+  }
+}
