@@ -1,5 +1,5 @@
 .footer-section {
-  background: rgba(0, 119, 182, 0.15);
+  background: linear-gradient(-45deg, #ffffff, #7aaaba, #cad3d7, #0077b6);
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
   padding: 25px 20px;

@@ -22,17 +22,19 @@ const achievementsData = [
 
 const Achievements = () => {
   return (
-    <div className="achievements-container">
-      <h2 className="achievements-title">Achievements & Experiences</h2>
-      <div className="achievements-grid">
-        {achievementsData.map((item, index) => (
-          <div key={index} className="achievement-card">
-            <h3 className="achievement-title">{item.title}</h3>
-            <p className="achievement-subtitle">{item.subtitle}</p>
-          </div>
-        ))}
+    <section id="achievements" className="achievements-section">
+      <div className="achievements-container">
+        <h2 className="achievements-title">Achievements</h2>
+        <div className="achievements-grid">
+          {achievementsData.map((item, index) => (
+            <div key={index} className="achievement-card">
+              <h3 className="achievement-title">{item.title}</h3>
+              <p className="achievement-subtitle">{item.subtitle}</p>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

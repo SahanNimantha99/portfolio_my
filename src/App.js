@@ -6,7 +6,6 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Work from "./components/Work";
-import Education from "./components/Education";
 import Projects from "./components/Projects";
 import Achievements from "./components/Achievements";
 import Contact from "./components/Contact";
@@ -28,10 +27,6 @@ function App() {
         <section id="work">
           {" "}
           <Work />{" "}
-        </section>{" "}
-        <section id="education">
-          {" "}
-          <Education />{" "}
         </section>{" "}
         <section id="projects">
           {" "}

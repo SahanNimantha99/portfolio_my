@@ -51,23 +51,25 @@ const projectsData = [
 
 const Projects = () => {
   return (
-    <div className="projects-container">
-      <h2 className="projects-title">Projects</h2>
-      <div className="projects-grid">
-        {projectsData.map((project, index) => (
-          <div key={index} className="project-card">
-            <h3 className="project-title">{project.title}</h3>
-            <h4 className="project-subtitle">{project.subtitle}</h4>
-            <ul className="project-description">
-              {project.description.map((line, i) => (
-                <li key={i}>{line}</li>
-              ))}
-            </ul>
-            <p className="project-tech">{project.tech}</p>
-          </div>
-        ))}
+    <section id="projects" className="projects-section">
+      <div className="projects-container">
+        <h2 className="projects-title">Projects</h2>
+        <div className="projects-grid">
+          {projectsData.map((project, index) => (
+            <div key={index} className="project-card">
+              <h3 className="project-title">{project.title}</h3>
+              <h4 className="project-subtitle">{project.subtitle}</h4>
+              <ul className="project-description">
+                {project.description.map((line, i) => (
+                  <li key={i}>{line}</li>
+                ))}
+              </ul>
+              <p className="project-tech">{project.tech}</p>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

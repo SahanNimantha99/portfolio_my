@@ -1,7 +1,19 @@
+.achievements-section {
+ background: linear-gradient(-45deg, #ffffff, #7aaaba, #3888ac, #0077b6);
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+}
+
 .achievements-container {
-  max-width: 1200px;
-  margin: 50px auto;
-  padding: 0 20px;
+ max-width: 1100px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.542);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 60px 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
   text-align: center;
 }
 
@@ -9,7 +21,7 @@
   font-family: 'Poppins', sans-serif;
   font-size: 2.8rem;
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   background: linear-gradient(90deg, #0077b6, #00b4d8, #90e0ef);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -28,9 +40,9 @@
   background: rgba(0, 119, 182, 0.15); /* frosted glass effect */
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
-  padding: 25px 20px;
-  border-radius: 15px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  padding: 30px 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
   width: 100%;
   max-width: 300px;
   text-align: center;
@@ -39,19 +51,19 @@
 
 .achievement-card:hover {
   transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+  box-shadow: 0 14px 45px rgba(0,0,0,0.3);
 }
 
 .achievement-title {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 600;
   color: #0077b6;
   margin-bottom: 8px;
 }
 
 .achievement-subtitle {
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 500;
   color: #00b4d8;
 }
@@ -60,6 +72,24 @@
 @media (max-width: 992px) {
   .achievements-title {
     font-size: 2.4rem;
+  }
+
+  .achievement-card {
+    padding: 25px 20px;
+  }
+
+  .achievement-title {
+    font-size: 1.2rem;
+  }
+
+  .achievement-subtitle {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .achievements-title {
+    font-size: 2rem;
   }
 
   .achievement-card {
@@ -72,23 +102,5 @@
 
   .achievement-subtitle {
     font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .achievements-title {
-    font-size: 2rem;
-  }
-
-  .achievement-card {
-    padding: 15px 10px;
-  }
-
-  .achievement-title {
-    font-size: 1rem;
-  }
-
-  .achievement-subtitle {
-    font-size: 0.85rem;
   }
 }
