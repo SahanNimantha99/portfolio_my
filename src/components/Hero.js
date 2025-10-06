@@ -27,6 +27,7 @@ const Hero = () => {
             }}
           />
         </div>
+
         <motion.h1
           className="hero-title"
           initial={{ opacity: 0, y: 30 }}
@@ -35,6 +36,7 @@ const Hero = () => {
         >
           Hi, I’m Sahan Nimantha
         </motion.h1>
+
         <motion.p
           className="hero-description"
           initial={{ opacity: 0 }}
@@ -46,6 +48,7 @@ const Hero = () => {
           intelligent, scalable applications that make technology more human.
           Let’s shape the future together.
         </motion.p>
+
         <motion.div
           className="hero-buttons"
           initial={{ opacity: 0 }}
@@ -58,12 +61,21 @@ const Hero = () => {
           >
             About Me
           </button>
+
           <button
             className="btn btn-secondary hero-btn"
             onClick={() => scrollToSection("contact")}
           >
             Contact Me
           </button>
+
+          <a
+            href="/Sahan_Nimantha_CV.pdf"
+            download
+            className="btn btn-primary hero-btn"
+          >
+            Download CV
+          </a>
         </motion.div>
       </motion.div>
     </section>
